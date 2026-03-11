@@ -1,287 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareRealm</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --surface: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666666;
+      --line: #e7e0d7;
+      --accent: #7d6b5d;
+      --accent-soft: #efe7df;
+      --max-width: 980px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
 
-<title>CareRealm</title>
+    * {
+      box-sizing: border-box;
+    }
 
-<link rel="stylesheet" href="style.css">
+    html {
+      scroll-behavior: smooth;
+    }
 
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(180deg, #fdfbf8 0%, #f5efe7 100%);
+      text-align: center;
+      padding: 90px 20px 70px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 18px auto 0;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    nav {
+      margin-top: 34px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 6px 10px;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 0.98rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    main {
+      padding-bottom: 28px;
+    }
+
+    section {
+      max-width: var(--max-width);
+      margin: 32px auto;
+      padding: 36px 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    section:first-of-type {
+      margin-top: 46px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.14rem;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 1.06rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.04rem;
+    }
+
+    .lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fcfaf7;
+    }
+
+    .scholar-link {
+      display: inline-block;
+      padding: 12px 18px;
+      background: var(--accent-soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .scholar-link:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 24px auto 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 10px 20px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding: 72px 18px 56px;
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+      }
+
+      section {
+        margin: 18px 14px;
+        padding: 24px 20px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-
-<h1>CareRealm</h1>
-
-<p>
-Exploring how care sustains the social fabric of everyday life
-</p>
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#idea">The Idea</a>
-<a href="#research">Research</a>
-<a href="#projects">Projects</a>
-<a href="#publications">Publications</a>
-<a href="#people">People</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-
-<section id="about">
-
-<h2>About CareRealm</h2>
-
-<p>
-
-CareRealm is a research initiative dedicated to understanding the role of care in sustaining social life. Across societies, care is often understood narrowly as a professional activity or a specific type of work. Yet care operates far beyond these boundaries.
-
-</p>
-
-<p>
-
-CareRealm approaches care as a fundamental social process that connects institutions, professions, communities, and families. Care is not only something that happens in hospitals, welfare agencies, or social services. It is present in everyday relationships, in civil society organizations, in public institutions, and in the countless forms of invisible work that sustain collective life.
-
-</p>
-
-<p>
-
-The initiative explores how care operates as a connective force across social domains. By examining the organization of care in welfare systems, professional environments, communities, and everyday life, CareRealm aims to illuminate the social fabric through which care sustains societies.
-
-</p>
-
-</section>
-
-
-<section id="idea">
-
-<h2>Theoretical Perspective</h2>
-
-<p>
-
-At the core of CareRealm lies a simple but powerful idea: care is not merely a form of labor, but a social condition that enables life to take place.
-
-</p>
-
-<p>
-
-Care functions as a social fabric that binds together institutions, professions, communities, and households. Without care, everyday life would not be possible. Schools could not function, health systems would collapse, families could not sustain themselves, and social institutions would lose their foundations.
-
-</p>
-
-<p>
-
-This perspective invites a shift in how care is studied. Rather than treating care solely as a professional activity, CareRealm examines care as a pervasive social force that shapes relationships, organizations, and social structures.
-
-</p>
-
-<p>
-
-From this perspective, care connects domains that are often treated as separate: work and family, institutions and communities, professional responsibilities and everyday obligations. Understanding care therefore requires examining the intersections between welfare systems, labor, civil society, and social life.
-
-</p>
-
-</section>
-
-
-<section id="research">
-
-<h2>Research Areas</h2>
-
-<p>
-
-CareRealm investigates the social organization of care across multiple domains of social life. The research program focuses on several interconnected areas:
-
-</p>
-
-<ul>
-
-<li><strong>Care Work and Welfare Professions</strong> – examining the experiences, practices, and institutional contexts of professionals working in care-related fields.</li>
-
-<li><strong>Gender and the Organization of Care</strong> – exploring how gender structures the distribution, recognition, and valuation of care work.</li>
-
-<li><strong>Civil Society and Nonprofit Organizations</strong> – studying how care is organized and practiced within voluntary organizations and community initiatives.</li>
-
-<li><strong>Social Work in Times of Crisis</strong> – investigating how care professionals navigate institutional challenges and ethical dilemmas during periods of social disruption.</li>
-
-<li><strong>Invisible Work</strong> – analyzing the hidden forms of labor and responsibility that sustain institutions and everyday life.</li>
-
-<li><strong>Boundaries Between Work and Life</strong> – exploring how care blurs the boundaries between professional roles, personal obligations, and civic engagement.</li>
-
-</ul>
-
-</section>
-
-
-<section id="projects">
-
-<h2>Research Projects</h2>
-
-<p>
-
-Current projects within CareRealm explore how care is produced and sustained across social institutions and everyday life.
-
-</p>
-
-<p>
-
-Research projects examine the experiences of welfare professionals, the organizational structures that shape care work, and the role of civil society in sustaining social support systems.
-
-</p>
-
-<p>
-
-Additional projects focus on the hidden infrastructures of care, including the informal practices and invisible labor that sustain institutions, organizations, and communities.
-
-</p>
-
-</section>
-
-
-<section id="publications">
-
-<h2>Publications</h2>
-
-<p>
-
-The research produced within CareRealm contributes to scholarly conversations in social work, sociology, gender studies, and civil society research.
-
-</p>
-
-<p>
-
-Selected publications will be listed here as the project develops.
-
-</p>
-
-</section>
-
-
-<section id="people">
-
-<h2>People</h2>
-
-<p>
-
-CareRealm is led by <strong>Dr. Inbar Livnat</strong>, a social scientist specializing in social work, gender studies, and civil society research.
-
-</p>
-
-<p>
-
-The initiative welcomes collaboration with researchers, students, and practitioners interested in the study of care, welfare professions, and the social foundations of everyday life.
-
-</p>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>
-
-Inbar Livnat, Ph.D.
-
-</p>
-
-<p>
-
-For collaboration, research inquiries, or academic partnerships, please get in touch.
-
-</p>
-
-</section>
-
-
-<footer>
-
-<p>© CareRealm</p>
-
-</footer>
-
-</body>
-
-</html>}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>CareRealm</h1>
-
-<p>
-Research on care work, welfare, and social life
-</p>
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-<section id="about">
-
-<h2>About</h2>
-
-<p>
-
-CareRealm explores how care sustains social life across institutions, professions, families, and communities.
-
-</p>
-
-<p>
-
-The project examines care work, welfare professions, and the role of care as a social fabric connecting everyday life.
-
-</p>
-
-</section>
-
-<section id="research">
-
-<h2>Research</h2>
-
-<ul>
-
-<li>Care work</li>
-<li>Welfare professions</li>
-<li>Civil society</li>
-<li>Social work in crisis</li>
-
-</ul>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>
-
-Inbar Livnat, Ph.D.
-ibarl@ariel.ac.il
-
-</p>
-
-</section>
+  <header>
+    <h1>CareRealm</h1>
+    <p class="subtitle">
+      Exploring how care sustains the social fabric of everyday life
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#idea">The Idea</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#people">People</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About CareRealm</h2>
+      <p class="lead">
+        CareRealm is a research initiative dedicated to understanding care not only as a form of labor, but as a social force that sustains everyday life.
+      </p>
+      <p>
+        Across institutions, professions, families, and communities, care makes social life possible. It enables organizations to function, relationships to endure, and public systems to hold together. Yet despite its centrality, care often remains undervalued, unevenly distributed, and only partially visible.
+      </p>
+      <p>
+        CareRealm studies the social worlds of care across welfare systems, civil society, professional life, and everyday practices. It brings together research on care work, welfare professions, gender, invisible work, and the boundaries between home, work, and community.
+      </p>
+    </section>
+
+    <section id="idea">
+      <h2>The Idea</h2>
+      <p>
+        The core idea behind CareRealm is simple: care is the social glue that allows life to happen.
+      </p>
+      <p>
+        Care does not belong only to one profession, one institution, or one sphere of life. It circulates across formal and informal settings, across public systems and private arrangements, across paid work and moral obligation. This means that care should be understood as a foundational dimension of social life rather than a narrow occupational category.
+      </p>
+      <p>
+        From this perspective, the study of care opens broader questions about inequality, recognition, responsibility, institutions, gender, and the moral organization of society.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Areas</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Care Work and Welfare Professions</h3>
+          <p>
+            Examining professional care roles, welfare institutions, and the lived realities of those who sustain systems of support.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Gender and the Organization of Care</h3>
+          <p>
+            Exploring how care is distributed, valued, and naturalized through gendered structures and expectations.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Civil Society and Nonprofit Organizations</h3>
+          <p>
+            Investigating how care is organized through associations, nonprofit actors, and community-based initiatives.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Invisible Work</h3>
+          <p>
+            Tracing the hidden forms of labor, coordination, and emotional responsibility that keep everyday life and institutions running.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Social Work in Times of Crisis</h3>
+          <p>
+            Studying how welfare professionals navigate uncertainty, overload, and moral demand in periods of disruption.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Boundaries Between Work, Home, and Community</h3>
+          <p>
+            Exploring how care blurs the lines between professional roles, personal life, and civic engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        Current and developing projects within CareRealm examine the social organization of care across multiple settings and scales.
+      </p>
+      <ul>
+        <li>Care work and welfare professions in institutional settings</li>
+        <li>Social work during crisis and prolonged disruption</li>
+        <li>Invisible work and care infrastructures</li>
+        <li>Mission-driven work across nonprofit and welfare sectors</li>
+        <li>Boundaries between professional care, volunteering, and everyday life</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>
+        A full and continuously updated list of publications is available on my Google Scholar profile.
+      </p>
+      <p>
+        <a class="scholar-link" href="https://scholar.google.com/citations?user=oehGAVEAAAAJ&hl=en&authuser=2&oi=ao" target="_blank" rel="noopener noreferrer">
+          View publications on Google Scholar
+        </a>
+      </p>
+    </section>
+
+    <section id="people">
+      <h2>People</h2>
+      <p>
+        CareRealm is led by <strong>Dr. Inbar Livnat</strong>, a social scientist specializing in social work, gender studies, and civil society research.
+      </p>
+      <p>
+        The initiative is designed as an open and growing research space that can later include collaborators, students, and affiliated researchers.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Dr. Inbar Livnat</strong>
+      </p>
+      <p>
+        Research on care, welfare professions, gender, and social life.
+      </p>
+      <p>
+        Add your email address here once you are ready to publish publicly.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © CareRealm
+  </footer>
 
 </body>
 </html>
