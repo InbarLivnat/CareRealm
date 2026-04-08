@@ -191,26 +191,27 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="section-title"><span class="bar"></span><h2>Contact</h2></div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p>For academic inquiries, collaboration proposals, or media requests, feel free to reach out.</p>
-          <ul>
-            <li>📧 <a href="mailto:ibarl@ariel.ac.il">ibarl@ariel.ac.il</a></li>
-            <li>🏛️ School of Social Work, Ariel University</li>
-            <li>🔬 Research: Care Work, Gender, Civil Society, Welfare Professions</li>
-          </ul>
-        </div>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="4" placeholder="Your message..."></textarea>
-          <button type="submit">Send Message →</button>
-        </form>
-      </div>
-    </section>
+<section id="contact" class="section">
+  <div class="section-title"><span class="bar"></span><h2>Contact</h2></div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>For academic inquiries, collaboration proposals, or media requests, feel free to reach out.</p>
+      <ul>
+        <li>📧 <a href="mailto:ibarl@ariel.ac.il">ibarl@ariel.ac.il</a></li>
+        <li>🏛️ School of Social Work, Ariel University</li>
+        <li>🔬 Research: Care Work, Gender, Civil Society, Welfare Professions</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/ibarl@ariel.ac.il" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message →</button>
+    </form>
+  </div>
+</section>
 
   </main>
 
