@@ -530,10 +530,16 @@ footer {
   color: #111111;
 }
 
-.people-card {
-  border-radius: 18px;
-}
-
 .people-photo {
   border-radius: 14px;
+}
+
+.people-names {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.people-names li {
+  margin-bottom: 6px;
+  color: #111111;
 }
